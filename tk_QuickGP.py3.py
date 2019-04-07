@@ -75,7 +75,6 @@ class App(tk.Frame):
             discountPrice = self.discountit(self.lPrice_input.get(), self.discount_input.get())
         else:
             pass
-        # self.master.destroy()
 
     def click_clear(self, event = None):
         self.lPrice_input.delete(0, 'end')
