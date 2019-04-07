@@ -1,6 +1,5 @@
-#!/usr/bin/env python
-import Tkinter as tk
-
+#!/usr/bin/env python3
+import tkinter as tk
 # Author: StpircsDahc
 # Author's github repo - https://github.com/stpircsdahc
 #######################################################
@@ -25,7 +24,9 @@ class App(tk.Frame):
         self.master.bind('<x>', self.click_exit)
 
         x = (self.master.winfo_screenwidth() - self.master.winfo_reqwidth()) / 2
-        y = (self.master.winfo_screenheight() - self.master.winfo_reqheight()) / 3
+        y = (self.master.winfo_screenheight() - self.master.winfo_reqheight()) / 2
+        x=int(x)
+        y=int(y)
         self.master.geometry("+{}+{}".format(x, y))
 
         self.master.config(menu=tk.Menu(self))
