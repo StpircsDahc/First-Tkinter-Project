@@ -23,10 +23,8 @@ class App(tk.Frame):
         self.master.bind('<Escape>', self.click_clear)
         self.master.bind('<x>', self.click_exit)
 
-        x = (self.master.winfo_screenwidth() - self.master.winfo_reqwidth()) / 2
-        y = (self.master.winfo_screenheight() - self.master.winfo_reqheight()) / 2
-        x=int(x)
-        y=int(y)
+        x = (self.master.winfo_screenwidth() - self.master.winfo_reqwidth()) // 2
+        y = (self.master.winfo_screenheight() - self.master.winfo_reqheight()) // 2
         self.master.geometry("+{}+{}".format(x, y))
 
         self.master.config(menu=tk.Menu(self))
